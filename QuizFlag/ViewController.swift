@@ -10,16 +10,34 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var newGameButton: UIButton!
+    @IBOutlet weak var aboutUsButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        newGameButton.layer.cornerRadius = 5.0
+        aboutUsButton.layer.cornerRadius = 5.0
+        
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func newGameButtonTapped(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.5) {
+            self.newGameButton.transform = CGAffineTransform(scaleX: 2.5, y: 2.5)
+            self.newGameButton.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+        }
+
     }
 
+    @IBAction func aboutUsButtonTapped(_ sender: UIButton) {
+        UIView.animate(withDuration: 0.5) {
+            self.aboutUsButton.transform = CGAffineTransform(scaleX: 2.5, y: 2.5)
+            self.aboutUsButton.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
+        }
+
+    }
+
+    @IBAction func unwindToNewGame(unwindSegue: UIStoryboardSegue) {
+    }
 
 }
 
