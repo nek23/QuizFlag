@@ -7,17 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA9CF7AF2084076F00B5B862 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA9CF7AE2084076F00B5B862 /* Assets.xcassets */; };
 		FAE86FF9207F6E6A003D6ABE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86FF8207F6E6A003D6ABE /* AppDelegate.swift */; };
 		FAE86FFB207F6E6A003D6ABE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86FFA207F6E6A003D6ABE /* ViewController.swift */; };
 		FAE86FFE207F6E6A003D6ABE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE86FFC207F6E6A003D6ABE /* Main.storyboard */; };
 		FAE87003207F6E6A003D6ABE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE87001207F6E6A003D6ABE /* LaunchScreen.storyboard */; };
 		FAE8700B207FBE6D003D6ABE /* QuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE8700A207FBE6D003D6ABE /* QuizViewController.swift */; };
-		FAE8700D207FC1E8003D6ABE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAE8700C207FC1E8003D6ABE /* Assets.xcassets */; };
 		FAE8700F207FC668003D6ABE /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE8700E207FC668003D6ABE /* ResultsViewController.swift */; };
 		FAE87011207FC7D9003D6ABE /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE87010207FC7D9003D6ABE /* Question.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FA9CF7AE2084076F00B5B862 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FAE86FF5207F6E6A003D6ABE /* QuizFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE86FF8207F6E6A003D6ABE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAE86FFA207F6E6A003D6ABE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -25,7 +26,6 @@
 		FAE87002207F6E6A003D6ABE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FAE87004207F6E6A003D6ABE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FAE8700A207FBE6D003D6ABE /* QuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizViewController.swift; sourceTree = "<group>"; };
-		FAE8700C207FC1E8003D6ABE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../PersonalityQuiz/PersonalityQuiz/Assets.xcassets; sourceTree = "<group>"; };
 		FAE8700E207FC668003D6ABE /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		FAE87010207FC7D9003D6ABE /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -66,7 +66,7 @@
 				FAE8700E207FC668003D6ABE /* ResultsViewController.swift */,
 				FAE87010207FC7D9003D6ABE /* Question.swift */,
 				FAE8700A207FBE6D003D6ABE /* QuizViewController.swift */,
-				FAE8700C207FC1E8003D6ABE /* Assets.xcassets */,
+				FA9CF7AE2084076F00B5B862 /* Assets.xcassets */,
 				FAE87001207F6E6A003D6ABE /* LaunchScreen.storyboard */,
 				FAE87004207F6E6A003D6ABE /* Info.plist */,
 			);
@@ -133,7 +133,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FAE87003207F6E6A003D6ABE /* LaunchScreen.storyboard in Resources */,
-				FAE8700D207FC1E8003D6ABE /* Assets.xcassets in Resources */,
+				FA9CF7AF2084076F00B5B862 /* Assets.xcassets in Resources */,
 				FAE86FFE207F6E6A003D6ABE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
