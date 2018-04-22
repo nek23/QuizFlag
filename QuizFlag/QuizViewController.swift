@@ -14,8 +14,10 @@ class QuizViewController: UIViewController {
     var currentPositionQuestion = 0
     var numberCorrectAnswers = 0
     
-    @IBOutlet weak var imageFlag: UIImageView!
     
+    @IBOutlet weak var questionLabel: UILabel!
+    @IBOutlet weak var questionImage: UIImageView!
+
     @IBOutlet weak var answerButton1: UIButton!
     @IBOutlet weak var answerButton2: UIButton!
     @IBOutlet weak var answerButton3: UIButton!
@@ -71,7 +73,10 @@ class QuizViewController: UIViewController {
     
     //Устанавливает ответы и флаги к текущему вопросу
     func setQuestion () {
-        imageFlag.image = UIImage(named: (currentQuestion?.flagImageName)!)
+        questionLabel.text = currentQuestion?.question
+        if let image = currentQuestion?.imageName {
+            questionImage.image = UIImage(named: (image))
+        }
         answerButton1.setTitle(currentQuestion?.answers[0], for: .normal)
         answerButton2.setTitle(currentQuestion?.answers[1], for: .normal)
         answerButton3.setTitle(currentQuestion?.answers[2], for: .normal)

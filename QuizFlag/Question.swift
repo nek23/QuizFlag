@@ -9,15 +9,24 @@
 import Foundation
 
 struct Question {
-    let flagImageName: String
+    let question: String
+    let imageName: String?
     let answers: [String]
     let correctAnswer: Int
 }
 
 var questions: [Question] = [
-    Question(flagImageName: "ar", answers: ["Нигерия", "Франция", "Уругвай", "Аргентина"], correctAnswer: 3),
-    Question(flagImageName: "br", answers: ["Панама", "Бразилия", "ЮАР", "Германия"], correctAnswer: 1),
-    Question(flagImageName: "gr", answers: ["Греция", "Грузия", "Румыния", "Ангола"], correctAnswer: 0),
-    Question(flagImageName: "kr", answers: ["Китай", "Южная Корея", "Вьетнам", "Малайзия"], correctAnswer: 1),
-    Question(flagImageName: "pt", answers: ["Испания", "Италия", "Португалия", "Бельгия"], correctAnswer: 2)
+    
+    Question(question: "Какой город является столицей Франции?", imageName: nil, answers: ["Париж", "Рим", "Берлин", "Лондон"], correctAnswer: 0),
+    Question(question: "Какой город является столицей Канады?", imageName: nil, answers: ["Мельбурн", "Оттава", "Вашингтон", "Лиссабон"], correctAnswer: 1),
+    Question(question: "Какой город является столицей Румынии?", imageName: nil, answers: ["Будапешт", "Бухарест", "Берлин", "Рим"], correctAnswer: 1),
+    Question(question: "Какой город является столицей Бельнии?", imageName: nil, answers: ["Стокгольм", "Париж", "Брюссель", "Берлин"], correctAnswer: 2),
+    Question(question: "Какой город является столицей Дании?", imageName: nil, answers: ["Осло", "Рим", "Хельсинки", "Копенгаген"], correctAnswer: 0),
+    Question(question: "Флаг какого государства изображен на рисунке?", imageName: "ar", answers: ["Нигерия", "Франция", "Уругвай", "Аргентина"], correctAnswer: 3),
+    Question(question: "Флаг какого государства изображен на рисунке?",imageName: "br", answers: ["Панама", "Бразилия", "ЮАР", "Германия"], correctAnswer: 1),
+    Question(question: "Флаг какого государства изображен на рисунке?", imageName: "gr", answers: ["Греция", "Грузия", "Румыния", "Ангола"], correctAnswer: 0),
+    Question(question: "Флаг какого государства изображен на рисунке?", imageName: "kr", answers: ["Китай", "Южная Корея", "Вьетнам", "Малайзия"], correctAnswer: 1),
+    Question(question: "Флаг какого государства изображен на рисунке?", imageName: "pt", answers: ["Испания", "Италия", "Португалия", "Бельгия"], correctAnswer: 2)
+    
+    
 ]
