@@ -30,7 +30,12 @@ class ResultsViewController: UIViewController {
         } else if resultInPersent <= 80 {
             resultLabel.text = "Хороший результат, почти"
             emojiLabel.text = "🙂"
-        } else {
+        } else if resultInPersent.isNaN {
+            resultLabel.text = "Вообще не играл даже"
+            emojiLabel.text = "😵"
+            levelLabel.isHidden = true
+        }
+        else {
             resultLabel.text = "Идеально, молодец"
             emojiLabel.text = "👍"
         }

@@ -32,7 +32,6 @@
                                 </state>
                                 <connections>
                                     <action selector="newGameButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KXt-W5-uOG"/>
-                                    <segue destination="7LY-qz-C2r" kind="show" id="tw9-p9-sHP"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sCO-TC-sG9">
@@ -73,6 +72,9 @@
                     <connections>
                         <outlet property="aboutUsButton" destination="sCO-TC-sG9" id="Ij1-59-yKE"/>
                         <outlet property="newGameButton" destination="U4J-ob-jWb" id="gpj-7f-ho8"/>
+                        <outlet property="selectGameControl" destination="d4n-Pz-WgM" id="l8Y-5A-PQi"/>
+                        <segue destination="7LY-qz-C2r" kind="show" identifier="NormalGameSegue" id="XGn-Dv-Sor"/>
+                        <segue destination="afw-tB-eKE" kind="show" identifier="TimeGameSegue" id="Toc-uT-Qru"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -175,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uvv-aI-wJz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1226.4000000000001" y="-287.40629685157421"/>
+            <point key="canvasLocation" x="1226" y="-359"/>
         </scene>
         <!--Results View Controller-->
         <scene sceneID="Vxw-dm-Z89">
@@ -234,7 +236,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gDR-P1-ylx" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="gqT-Wg-KNq" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1975.2" y="-285.60719640179911"/>
+            <point key="canvasLocation" x="2228" y="-94"/>
         </scene>
         <!--О нас-->
         <scene sceneID="CMW-Ea-QqC">
@@ -267,7 +269,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Adn-DK-3Ta" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1206" y="409"/>
+            <point key="canvasLocation" x="-15" y="668"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="aje-o3-HsF">
@@ -287,5 +289,106 @@
             </objects>
             <point key="canvasLocation" x="-812" y="-94"/>
         </scene>
+        <!--Time Quiz View Controller-->
+        <scene sceneID="Z5n-VC-1KV">
+            <objects>
+                <viewController id="afw-tB-eKE" customClass="TimeQuizViewController" customModule="QuizFlag" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f7l-qD-f6z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="13" translatesAutoresizingMaskIntoConstraints="NO" id="vDh-Ie-NG8">
+                                <rect key="frame" x="12" y="104" width="375" height="543"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вопрос" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xe4-nF-PGH">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="pnw-xb-TnG">
+                                        <rect key="frame" x="0.0" y="34" width="375" height="257"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Nc-2K-POA">
+                                        <rect key="frame" x="0.0" y="304" width="375" height="50"/>
+                                        <color key="backgroundColor" red="0.98056637710000005" green="1" blue="0.79810400159999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="MDn-LE-jaD"/>
+                                        </constraints>
+                                        <state key="normal" title="1 ответ">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="submitAnswer1:" destination="afw-tB-eKE" eventType="touchUpInside" id="7D9-8S-mqF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FSw-q9-Jkt">
+                                        <rect key="frame" x="0.0" y="367" width="375" height="50"/>
+                                        <color key="backgroundColor" red="0.98056637710000005" green="1" blue="0.79810400159999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="QSA-oz-9rl"/>
+                                        </constraints>
+                                        <state key="normal" title="2 ответ">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="submitAnswer2:" destination="afw-tB-eKE" eventType="touchUpInside" id="OVg-jG-qfq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X53-2r-mdu">
+                                        <rect key="frame" x="0.0" y="430" width="375" height="50"/>
+                                        <color key="backgroundColor" red="0.98056637710000005" green="1" blue="0.79810400159999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="cTW-VE-Ld8"/>
+                                        </constraints>
+                                        <state key="normal" title="3 ответ">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="submitAnswer3:" destination="afw-tB-eKE" eventType="touchUpInside" id="yT3-8C-3Uu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D0Q-Wh-qzM">
+                                        <rect key="frame" x="0.0" y="493" width="375" height="50"/>
+                                        <color key="backgroundColor" red="0.98056637710000005" green="1" blue="0.79810400159999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="hVi-HP-m3Q"/>
+                                        </constraints>
+                                        <state key="normal" title="4 ответ">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="submitAnswer4:" destination="afw-tB-eKE" eventType="touchUpInside" id="Mob-C0-CYB"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vDh-Ie-NG8" firstAttribute="leading" secondItem="TM0-5Q-Mqg" secondAttribute="leading" constant="12" id="D5c-xk-FTm"/>
+                            <constraint firstAttribute="bottom" secondItem="vDh-Ie-NG8" secondAttribute="bottom" constant="20" id="Hv1-bu-B57"/>
+                            <constraint firstAttribute="trailing" secondItem="vDh-Ie-NG8" secondAttribute="trailing" constant="12" id="xym-XY-kiT"/>
+                            <constraint firstItem="vDh-Ie-NG8" firstAttribute="top" secondItem="TM0-5Q-Mqg" secondAttribute="top" constant="40" id="zum-zX-GMX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TM0-5Q-Mqg"/>
+                    </view>
+                    <connections>
+                        <outlet property="answerButton1" destination="1Nc-2K-POA" id="MiE-k9-Ws3"/>
+                        <outlet property="answerButton2" destination="FSw-q9-Jkt" id="T8L-af-VGW"/>
+                        <outlet property="answerButton3" destination="X53-2r-mdu" id="U92-Bo-68x"/>
+                        <outlet property="answerButton4" destination="D0Q-Wh-qzM" id="Nqj-Bv-UPV"/>
+                        <outlet property="questionImage" destination="pnw-xb-TnG" id="U8F-ra-Wus"/>
+                        <outlet property="questionLabel" destination="xe4-nF-PGH" id="dtD-X6-LiV"/>
+                        <segue destination="45B-8i-88G" kind="show" identifier="ShowResults" id="HTG-LD-9EH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yQE-ar-UXK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1266" y="405"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="HTG-LD-9EH"/>
+    </inferredMetricsTieBreakers>
 </document>

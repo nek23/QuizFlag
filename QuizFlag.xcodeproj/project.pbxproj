@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FA2D801920849112009FE76B /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FA2D801820849112009FE76B /* Media.xcassets */; };
+		FA778262208CF94000702D22 /* TimeQuizViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA778261208CF94000702D22 /* TimeQuizViewController.swift */; };
 		FAE86FF9207F6E6A003D6ABE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86FF8207F6E6A003D6ABE /* AppDelegate.swift */; };
 		FAE86FFB207F6E6A003D6ABE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE86FFA207F6E6A003D6ABE /* ViewController.swift */; };
 		FAE86FFE207F6E6A003D6ABE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAE86FFC207F6E6A003D6ABE /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		FA2D801820849112009FE76B /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		FA778261208CF94000702D22 /* TimeQuizViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeQuizViewController.swift; sourceTree = "<group>"; };
 		FAE86FF5207F6E6A003D6ABE /* QuizFlag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuizFlag.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FAE86FF8207F6E6A003D6ABE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FAE86FFA207F6E6A003D6ABE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				FAE86FF8207F6E6A003D6ABE /* AppDelegate.swift */,
 				FAE86FFA207F6E6A003D6ABE /* ViewController.swift */,
 				FAE86FFC207F6E6A003D6ABE /* Main.storyboard */,
+				FA778261208CF94000702D22 /* TimeQuizViewController.swift */,
 				FAE8700E207FC668003D6ABE /* ResultsViewController.swift */,
 				FAE87010207FC7D9003D6ABE /* Question.swift */,
 				FAE8700A207FBE6D003D6ABE /* QuizViewController.swift */,
@@ -145,6 +148,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA778262208CF94000702D22 /* TimeQuizViewController.swift in Sources */,
 				FAE87011207FC7D9003D6ABE /* Question.swift in Sources */,
 				FAE8700B207FBE6D003D6ABE /* QuizViewController.swift in Sources */,
 				FAE86FFB207F6E6A003D6ABE /* ViewController.swift in Sources */,

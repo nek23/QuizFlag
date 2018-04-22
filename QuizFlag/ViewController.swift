@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var newGameButton: UIButton!
     @IBOutlet weak var aboutUsButton: UIButton!
     
+    @IBOutlet weak var selectGameControl: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         newGameButton.layer.cornerRadius = 5.0
@@ -26,6 +28,13 @@ class ViewController: UIViewController {
             self.newGameButton.transform = CGAffineTransform(scaleX: 1.0, y: 1.0)
         }
 
+        if selectGameControl.selectedSegmentIndex == 0 {
+            performSegue(withIdentifier: "NormalGameSegue", sender: nil)
+        } else {
+            performSegue(withIdentifier: "TimeGameSegue", sender: nil)
+        }
+        
+        
     }
 
     @IBAction func aboutUsButtonTapped(_ sender: UIButton) {
