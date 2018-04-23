@@ -67,8 +67,10 @@ class QuizViewController: UIViewController {
     //Устанавливает ответы и флаги к текущему вопросу
     func setQuestion () {
         questionLabel.text = currentQuestion?.question
-        if let image = currentQuestion?.imageName {
-            questionImage.image = UIImage(named: (image))
+        if currentQuestion?.imageName != nil {
+            questionImage.image = UIImage(named: (currentQuestion?.imageName)!)}
+        else {
+            questionImage.image = nil
         }
         answerButton1.setTitle(currentQuestion?.answers[0], for: .normal)
         answerButton2.setTitle(currentQuestion?.answers[1], for: .normal)
